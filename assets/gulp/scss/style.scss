@@ -1,0 +1,39 @@
+/*start mixins*/
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+}
+
+/*end mixins*/
+
+/*start colors*/
+
+$l_orange: #F9CB9C;
+$s_orange: #FA5039;
+;
+
+/*end colors*/
+
+
+body {
+  background-color: $s_orange;
+  //max-width: 650px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+
+.temp-container {
+  max-width: 650px;
+  margin: auto;
+}
+
+.table {
+  background-image: url(../images/flowers.png), url(../images/flower.png);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}

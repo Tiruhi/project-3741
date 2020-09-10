@@ -1,0 +1,25 @@
+/*start mixins*/
+/*end mixins*/
+/*start colors*/
+/*end colors*/
+body {
+  background-color: #FA5039;
+  margin: auto;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.temp-container {
+  max-width: 650px;
+  margin: auto;
+}
+
+.table {
+  background-image: url(../images/flowers.png), url(../images/flower.png);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+/*# sourceMappingURL=style.css.map */
