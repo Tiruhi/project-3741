@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #fff;
+            margin: auto;
+        }
+
+        section {
+
+            max-width: 650px;
+            margin: auto;
+
+            /*background-image: url(assets/images/temp-2-bg.png);*/
+            background: url(assets/images/temp-3-bg.png) no-repeat center center;
+            /*-webkit-background-size: cover;*/
+            /*-moz-background-size: cover;*/
+            /*-o-background-size: cover;*/
+            /*background-size: cover;*/
+        }
+
+        table {
+            border-collapse: collapse;
+            border-color: transparent;
+            min-height: 1184px;
+            width: 684px;
+        }
+
+        table, th, td {
+            position: relative;
+        }
+
+        table th .title .h2 {
+            font-weight: 900;
+            font-size: 41px;
+            line-height: 55px;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        table td .h3 {
+
+        }
+
+        .title {
+            text-align: end;
+        }
+
+        .orange {
+            color: #F9CB9C;
+        }
+
+        .white {
+            color: #fff;
+        }
+
+        .temp-content {
+            max-width: 477px;
+            margin: auto;
+            text-align: start;
+        }
+
+        .temp-content-text {
+            color: #000;
+            font-family: Lato;
+            padding-bottom: 20px;
+
+            font-style: italic;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .temp-container {
+            max-width: 650px;
+            margin: auto;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+<section class="temp-container" style="position: relative">
+
+    <table class="table" style="">
+        <tr style=" display: flex; justify-content: center">
+            <th style="">
+                <div class="avatar-wrap display: flex; justify-content: center; flex-direction: column"
+                     style="position:relative; background-color: #fff; border-radius: 45px; width: 90px; height: 90px;">
+                    <img src="assets/images/temp--3-avatar.png" alt="" class="pos"
+                         style="position: absolute; z-index: 100; left: 0; bottom: 0"/>
+                    <img src="assets/images/with.png" alt="" class="pos"
+                         style="position: absolute; z-index: 100; left: 0; bottom: -30px; "/>
+
+                    <h3 style="color: #fff; width: 100%; position: absolute; bottom: -55px; font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 10.5px;
+line-height: 19px;
+
+text-transform: capitalize;
+
+color: #FFFFFF;">
+                        Cares User Profile
+                    </h3>
+                </div>
+
+            </th>
+            <th>
+                <div class="title" style="/*position: absolute; left: 78px; top: 186px*/">
+                    <h2 class="h2 orange">Healing.</h2>
+                    <h2 class="h2 orange">Wellness.</h2>
+                    <h2 class="h2 white">Together.</h2>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <div class="temp-content"
+                     style="display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: white;"">
+
+                    <p class="temp-content-text ">
+                        Notes from the founder
+                    </p>
+                    <input class="temp-text-input line-1"
+                           style="border-bottom: .5px solid #000000; border-top: none; border-left: none; border-right: none; background-color: transparent;"/>
+                    <input class="temp-text-input line-2"
+                           style="border-bottom: .5px solid #000000; border-top: none; border-left: none; border-right: none; background-color: transparent;"/>
+                    <input class="temp-text-input line-3"
+                           style="border-bottom: .5px solid #000000; border-top: none; border-left: none; border-right: none; background-color: transparent;"/>
+
+                </div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div style="background-color: white;">
+
+
+                <h3>My wellness scores</h3>
+
+                <div style="display: flex; flex-direction: column; justify-content: start;align-content: start">
+
+                    <label for="workInputId">Work</label>
+                    <div>
+                        <input type="range" name="workInputName" id="workInputId" value="50" min="0" max="100"
+                               oninput="workOutputId.value = workInputId.value" step="1">
+
+                        <output name="workOutputName" id="workOutputId">50</output>
+                    </div>
+
+                </div>
+
+                <div>
+                    <label for="nameInputId1">Name</label>
+                    <div>
+                        <input type="range" name="nameInputName1" id="nameInputId1" value="50" min="0" max="100"
+                               oninput="nameOutputId1.value = nameInputId1.value" step="1">
+                        <output name="nameOutputName1" id="nameOutputId1">50</output>
+                    </div>
+
+                </div>
+                <div>
+                    <label for="nameInputId2">Name</label>
+                    <div>
+                        <input type="range" name="nameInputName2" id="nameInputId2" value="50" min="0" max="100"
+                               oninput="nameOutputId2.value = nameInputId2.value" step="1">
+                        <output name="nameOutputName2" id="nameOutputId2">50</output>
+                    </div>
+                </div>
+                </div>
+
+            </td>
+
+            <td>
+                <div style="background-color: white;">
+
+                <h3>My wellness scores</h3>
+
+                <div style="display: flex; flex-direction: column; justify-content: start;align-content: start">
+
+                    <label for="workInputId">Work</label>
+                    <div>
+                        <input type="range" name="workInputName" id="workInputId" value="50" min="0" max="100"
+                               oninput="workOutputId.value = workInputId.value" step="1">
+
+                        <output name="workOutputName" id="workOutputId">50</output>
+                    </div>
+
+                </div>
+
+                <div>
+                    <label for="nameInputId1">Name</label>
+                    <div>
+                        <input type="range" name="nameInputName1" id="nameInputId1" value="50" min="0" max="100"
+                               oninput="nameOutputId1.value = nameInputId1.value" step="1">
+                        <output name="nameOutputName1" id="nameOutputId1">50</output>
+                    </div>
+
+                </div>
+                <div>
+                    <label for="nameInputId2">Name</label>
+                    <div>
+                        <input type="range" name="nameInputName2" id="nameInputId2" value="50" min="0" max="100"
+                               oninput="nameOutputId2.value = nameInputId2.value" step="1">
+                        <output name="nameOutputName2" id="nameOutputId2">50</output>
+                    </div>
+                </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <th style="position: absolute; left: 268px; background-color: white; ">
+                <div class="signature" style="position: absolute;">
+
+                    <img src="assets/images/signature-109x54.png" alt="Signature">
+                </div>
+            </th>
+            <th style="position: absolute; right: 76px">
+                <div class="" style="position: relative; display: flex; flex-direction: column;">
+                    <div class="logo-black" style="position: absolute;right: 148px;">
+
+                        <img src="assets/icons/icon-black.png" alt="With Us For You">
+                    </div>
+
+                    <h3 class="h3 white"
+                        style="text-align: start; font-family: 'Playfair Display', serif; font-size: 12px; font-weight: bold; position: absolute;right: 53px; top: 121px; width: 165px;">
+                        We love direct connection.
+                        <br/>Feel free to email us here for
+                        <br/>anything you need:</h3>
+                    <a href="mailto:connect@withisforyou.com" target="_blank"
+                       style="
+                           font-size: 12px;
+                           text-decoration: none;
+                           color: #fff;
+                           position: absolute;
+                           top: 185px;
+                           right: 65px;
+                           letter-spacing: 1.1px;
+                           font-family: 'Lato', sans-serif;">connect@withisforyou.com</a>
+
+                    <div class="soc-block" style="position: absolute;   text-decoration: none;
+                           color: #fff;
+                           top: 222px;
+                               right: 115px; display: flex; flex-direction: row">
+                        <a href="#" style="margin: 0 5px">
+                            <img src="assets/icons/twitter-3.png" alt="twitter">
+                        </a>
+                        <a href="#" style="margin: 0 5px">
+                            <img src="assets/icons/facebook-3.png" alt="facebook">
+                        </a>
+                        <a href="#" style="margin: 0 5px">
+                            <img src="assets/icons/insta-3.png" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+            </th>
+        </tr>
+    </table>
+
+</section>
+</body>
+</html>
