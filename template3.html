@@ -33,7 +33,7 @@
             border-collapse: collapse;
             border-color: transparent;
             min-height: 1184px;
-            width: 684px;
+            width: 650px;
         }
 
         table, th, td {
@@ -73,11 +73,14 @@
         .temp-content-text {
             color: #000;
             font-family: Lato;
-            padding-bottom: 20px;
+            /*padding-bottom: 20px;*/
 
-            font-style: italic;
+            font-family: Playfair Display;
+            font-style: normal;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 12px;
+            line-height: 16px;
+
         }
 
         .temp-container {
@@ -87,14 +90,122 @@
         }
 
 
+
+/*start input range */
+
+        input[type=range] {
+            height: 25px;
+            -webkit-appearance: none;
+            margin: 10px 0;
+            width: 100%;
+        }
+        input[type=range]:focus {
+            outline: none;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 5px;
+            cursor: pointer;
+            animate: 0.2s;
+            box-shadow: 0px 0px 0px #000000;
+            background: #2497E3;
+            background: #ECF1FF;
+
+            border-radius: 1px;
+            border: 0px solid #000000;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            box-shadow: 0px 0px 0px #000000;
+            border: 1px solid #2497E3;
+            height: 18px;
+            width: 18px;
+            border-radius: 25px;
+            background: #A1D0FF;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -7px;
+        }
+        input[type=range]:focus::-webkit-slider-runnable-track {
+            /*background: #2497E3;*/
+            /*background: #677A57;*/
+            background: #ECF1FF;
+
+
+        }
+        input[type=range]::-moz-range-track {
+            width: 100%;
+            height: 5px;
+            cursor: pointer;
+            animate: 0.2s;
+            box-shadow: 0px 0px 0px #000000;
+            background: #2497E3;
+            background: #677A57;
+
+            border-radius: 1px;
+            border: 0px solid #000000;
+        }
+        input[type=range]::-moz-range-thumb {
+            box-shadow: 0px 0px 0px #000000;
+            border: 1px solid #2497E3;
+            height: 18px;
+            width: 18px;
+            border-radius: 25px;
+            background: #A1D0FF;
+            cursor: pointer;
+        }
+        input[type=range]::-ms-track {
+            width: 100%;
+            height: 5px;
+            cursor: pointer;
+            animate: 0.2s;
+            background: transparent;
+            border-color: transparent;
+            color: transparent;
+        }
+        input[type=range]::-ms-fill-lower {
+            background: #2497E3;
+            border: 0px solid #000000;
+            border-radius: 2px;
+            box-shadow: 0px 0px 0px #000000;
+        }
+        input[type=range]::-ms-fill-upper {
+            background: #2497E3;
+            border: 0px solid #000000;
+            border-radius: 2px;
+            box-shadow: 0px 0px 0px #000000;
+        }
+        input[type=range]::-ms-thumb {
+            margin-top: 1px;
+            box-shadow: 0px 0px 0px #000000;
+            border: 1px solid #2497E3;
+            height: 18px;
+            width: 18px;
+            border-radius: 25px;
+            background: #A1D0FF;
+            cursor: pointer;
+        }
+        input[type=range]:focus::-ms-fill-lower {
+            background: #2497E3;
+        }
+        input[type=range]:focus::-ms-fill-upper {
+            background: #2497E3;
+        }
+
+/*end input range */
     </style>
 </head>
 <body>
 <section class="temp-container" style="position: relative">
 
-    <table class="table" style="">
-        <tr style=" display: flex; justify-content: center">
-            <th style="">
+    <table class="table" >
+        <tbody style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 40px;">
+
+        <tr style="display: flex; justify-content: center">
+            <th style="margin-right: 25px">
                 <div class="avatar-wrap display: flex; justify-content: center; flex-direction: column"
                      style="position:relative; background-color: #fff; border-radius: 45px; width: 90px; height: 90px;">
                     <img src="assets/images/temp--3-avatar.png" alt="" class="pos"
@@ -102,22 +213,19 @@
                     <img src="assets/images/with.png" alt="" class="pos"
                          style="position: absolute; z-index: 100; left: 0; bottom: -30px; "/>
 
-                    <h3 style="color: #fff; width: 100%; position: absolute; bottom: -55px; font-family: Lato;
-font-style: normal;
+                    <h3 style="color: #fff; width: 100%; position: absolute; bottom: -55px; font-family: Lato;font-style: normal;
 font-weight: normal;
 font-size: 10.5px;
 line-height: 19px;
-
-text-transform: capitalize;
-
-color: #FFFFFF;">
+text-transform: capitalize;">
                         Cares User Profile
                     </h3>
                 </div>
 
             </th>
-            <th>
-                <div class="title" style="/*position: absolute; left: 78px; top: 186px*/">
+            <th style="margin-left: 25px">
+
+                <div class="title" style="position: relative; top: -15px;">
                     <h2 class="h2 orange">Healing.</h2>
                     <h2 class="h2 orange">Wellness.</h2>
                     <h2 class="h2 white">Together.</h2>
@@ -125,19 +233,19 @@ color: #FFFFFF;">
             </th>
         </tr>
         <tr>
-            <td colspan="2" >
+            <td colspan="2" style="width: 100%">
                 <div class="temp-content"
-                     style="display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: white;"">
+                     style="display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: white; margin-top: 44px; min-width: 513px;">
 
-                    <p class="temp-content-text ">
-                        Notes from the founder
-                    </p>
-                    <input class="temp-text-input line-1"
-                           style="border-bottom: .5px solid #000000; border-top: none; border-left: none; border-right: none; background-color: transparent;"/>
-                    <input class="temp-text-input line-2"
-                           style="border-bottom: .5px solid #000000; border-top: none; border-left: none; border-right: none; background-color: transparent;"/>
-                    <input class="temp-text-input line-3"
-                           style="border-bottom: .5px solid #000000; border-top: none; border-left: none; border-right: none; background-color: transparent;"/>
+                <p class="temp-content-text">
+                    Notes from the founder
+                </p>
+                <input class="temp-text-input line-1"
+                       style="border-bottom: .5px solid #000000; border-top: none; border-left: none; border-right: none; background-color: transparent; outline: none; min-width: 430px; height: 25px"/>
+                <input class="temp-text-input line-2"
+                       style="border-bottom: .5px solid #000000; border-top: none; border-left: none; border-right: none; background-color: transparent; outline: none; min-width: 400px; height: 25px"/>
+                <input class="temp-text-input line-3"
+                       style="border-bottom: .5px solid #000000; border-top: none; border-left: none; border-right: none; background-color: transparent; outline: none; min-width: 260px; height: 25px; margin-bottom: 28px"/>
 
                 </div>
 
@@ -146,78 +254,78 @@ color: #FFFFFF;">
 
         <tr>
             <td>
-                <div style="background-color: white;">
+                <div style="background-color: white; min-width: 247px; margin-right: 9px">
 
 
-                <h3>My wellness scores</h3>
+                    <h3>My wellness scores</h3>
 
-                <div style="display: flex; flex-direction: column; justify-content: start;align-content: start">
+                    <div style="display: flex; flex-direction: column; justify-content: start;align-content: start">
 
-                    <label for="workInputId">Work</label>
-                    <div>
-                        <input type="range" name="workInputName" id="workInputId" value="50" min="0" max="100"
-                               oninput="workOutputId.value = workInputId.value" step="1">
+                        <label for="workInputId">Work</label>
+                        <div>
+                            <input type="range" name="workInputName" id="workInputId" value="50" min="0" max="100"
+                                   oninput="workOutputId.value = workInputId.value" step="1">
 
-                        <output name="workOutputName" id="workOutputId">50</output>
+                            <output name="workOutputName" id="workOutputId">50</output>
+                        </div>
+
                     </div>
 
-                </div>
-
-                <div>
-                    <label for="nameInputId1">Name</label>
                     <div>
-                        <input type="range" name="nameInputName1" id="nameInputId1" value="50" min="0" max="100"
-                               oninput="nameOutputId1.value = nameInputId1.value" step="1">
-                        <output name="nameOutputName1" id="nameOutputId1">50</output>
-                    </div>
+                        <label for="nameInputId1">Name</label>
+                        <div>
+                            <input type="range" name="nameInputName1" id="nameInputId1" value="50" min="0" max="100"
+                                   oninput="nameOutputId1.value = nameInputId1.value" step="1">
+                            <output name="nameOutputName1" id="nameOutputId1">50</output>
+                        </div>
 
-                </div>
-                <div>
-                    <label for="nameInputId2">Name</label>
-                    <div>
-                        <input type="range" name="nameInputName2" id="nameInputId2" value="50" min="0" max="100"
-                               oninput="nameOutputId2.value = nameInputId2.value" step="1">
-                        <output name="nameOutputName2" id="nameOutputId2">50</output>
                     </div>
-                </div>
+                    <div>
+                        <label for="nameInputId2">Name</label>
+                        <div>
+                            <input type="range" name="nameInputName2" id="nameInputId2" value="50" min="0" max="100"
+                                   oninput="nameOutputId2.value = nameInputId2.value" step="1">
+                            <output name="nameOutputName2" id="nameOutputId2">50</output>
+                        </div>
+                    </div>
                 </div>
 
             </td>
 
             <td>
-                <div style="background-color: white;">
+                <div style="background-color: white; min-width: 247px; margin-left: 10px;">
 
-                <h3>My wellness scores</h3>
+                    <h3>My wellness scores</h3>
 
-                <div style="display: flex; flex-direction: column; justify-content: start;align-content: start">
+                    <div style="display: flex; flex-direction: column; justify-content: start;align-content: start">
 
-                    <label for="workInputId">Work</label>
-                    <div>
-                        <input type="range" name="workInputName" id="workInputId" value="50" min="0" max="100"
-                               oninput="workOutputId.value = workInputId.value" step="1">
+                        <label for="workInputId">Work</label>
+                        <div>
+                            <input type="range" name="workInputName" id="workInputId" value="50" min="0" max="100"
+                                   oninput="workOutputId.value = workInputId.value" step="1">
 
-                        <output name="workOutputName" id="workOutputId">50</output>
+                            <output name="workOutputName" id="workOutputId">50</output>
+                        </div>
+
                     </div>
 
-                </div>
-
-                <div>
-                    <label for="nameInputId1">Name</label>
                     <div>
-                        <input type="range" name="nameInputName1" id="nameInputId1" value="50" min="0" max="100"
-                               oninput="nameOutputId1.value = nameInputId1.value" step="1">
-                        <output name="nameOutputName1" id="nameOutputId1">50</output>
-                    </div>
+                        <label for="nameInputId1">Name</label>
+                        <div>
+                            <input type="range" name="nameInputName1" id="nameInputId1" value="50" min="0" max="100"
+                                   oninput="nameOutputId1.value = nameInputId1.value" step="1">
+                            <output name="nameOutputName1" id="nameOutputId1">50</output>
+                        </div>
 
-                </div>
-                <div>
-                    <label for="nameInputId2">Name</label>
-                    <div>
-                        <input type="range" name="nameInputName2" id="nameInputId2" value="50" min="0" max="100"
-                               oninput="nameOutputId2.value = nameInputId2.value" step="1">
-                        <output name="nameOutputName2" id="nameOutputId2">50</output>
                     </div>
-                </div>
+                    <div>
+                        <label for="nameInputId2">Name</label>
+                        <div>
+                            <input type="range" name="nameInputName2" id="nameInputId2" value="50" min="0" max="100"
+                                   oninput="nameOutputId2.value = nameInputId2.value" step="1">
+                            <output name="nameOutputName2" id="nameOutputId2">50</output>
+                        </div>
+                    </div>
                 </div>
             </td>
         </tr>
@@ -269,6 +377,7 @@ color: #FFFFFF;">
                 </div>
             </th>
         </tr>
+        </tbody>
     </table>
 
 </section>
